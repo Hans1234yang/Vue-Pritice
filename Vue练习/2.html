@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<script src="https://unpkg.com/vue"></script>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!--vue-app是根容器-->   <!--//所有的内容仅限于 vue-app根容器之下-->
+    <div id="vue-app">
+
+        <h1>{{greet('Afternoon')}}</h1>
+        <p>{{name}}</p>
+        <p>{{job}}</p>
+        <a v-bind:href="website">链接</a>
+
+        <input type="text" v-bind:value="name"/>
+        <p v-html="websiteTag">这个是标签</p>
+    </div>
+
+    <script src="2.js"></script>
+</body>
+</html>
+
+
